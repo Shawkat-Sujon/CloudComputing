@@ -5,6 +5,7 @@ $users = $conn -> query($get_users);
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8" />
 	<?php
@@ -81,7 +82,9 @@ $users = $conn -> query($get_users);
             </tr>
         </thead> 
         <tbody>
-        	<?php 
+        	<?php
+
+
         	$query = "Select * from student";
         	$students = $conn -> query($query);
         	foreach ($students as $key => $std) {
